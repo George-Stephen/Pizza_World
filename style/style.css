@@ -6,8 +6,9 @@ body{
     background-image: url(../images/tasty-pepperoni-pizza-black-concrete-background_79782-103.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1400px;
+    background-size: 1500px;
     color:rgb(174, 228, 218);
+    background-attachment: fixed;
     
 }
 .logo h3{
@@ -27,6 +28,7 @@ body{
     text-align: center;
     background-color: yellowgreen;
     background-size: 1200px;
+
 }
 .finish h4{
     font-weight: bold;
@@ -34,11 +36,17 @@ body{
 .col-md-3{
     padding-left: 50px;
     padding-bottom: 50px;
+    cursor: pointer;
 }
 .row{
     text-align: center;
 }
-.menu h4{
+#menu h4{
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+.logo button{
+ padding: 20px 20px;
+ border-radius: 30px;
+ background-color: yellowgreen;
+}
