@@ -25,7 +25,20 @@ $(".cali").click(function(){
 })
  function calculate(){
      //*Business logic*//
-     var person =
+     var person = function(names,number,location,Email){
+        this.names=names;
+        this.number=number;
+        this.location=location;
+        this.Email=Email;
+    }
+     var order = function(size,toppings,crust,number){
+         this.size=size;
+         this.toppings=toppings;
+         this.crust=crust;
+         this.number=number;
+     }
+
+
 
  }
 });
