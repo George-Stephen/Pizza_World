@@ -24,9 +24,9 @@ $(".cali").click(function(){
     $(".8").slideToggle();
 })
  //*Business logic*//
- function person (names,number,location,Email){
+ function person (names,phone,location,Email){
     this.names=names;
-    this.number=number;
+    this.phone=phone;
     this.location=location;
     this.Email=Email;
 }
@@ -39,11 +39,11 @@ $(".cali").click(function(){
  }
 //*User logic*//
 var names =$(".name").val();
-var number=$(".number").val();
+var phone=$(".phone").val();
 var location=$(".location").val();
 var email =$(".Email").val();
 var topping_price=300;
-var User = new person(names,number,location,email);
+var User = new person(names,phone,location,email);
 
 
 var size = $(".size").val();
@@ -52,20 +52,38 @@ var crust = $(".crust").val();
 var number =$(".number").val();
 var delivery=$(".delivery").val();
 var Myorder = new order(size,toppings,crust,number,delivery);
-let price;
+let price = 0;
+let Total =0;
+let Balance =0;
  
   $(".calc").click(function(){
 switch(size){
     case size="Large":
         price=1100;
+        alert(price)
+        Total = price + 300;
+        alert(Total)
+        Balance= Total * 7;
+          alert(Balance)
         break
      case  size="Medium":
          price=800;
+         alert(price)
+    Total = price + 300;
+    alert(Total)
+    Balance= Total * 7;
+    alert(Balance)
          break
      case size="small":
          price = 500;
-         break
+         alert(price)
+    Total = price + 300;
+    alert(Total)
+    Balance= Total * 7;
+    alert(Balance);
+    break
+    default:
+        alert("Make your order correctly")
 }
-    alert(price)
   });
 })
