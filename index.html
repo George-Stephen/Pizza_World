@@ -23,10 +23,12 @@
             <h3>Contact_Details</h3>
             <br><br><br>
             <form>
-                <input type="text" class="name" placeholder="Name..">Name
-                <input type="text" class="number" placeholder="07********">Number<br><br><br>
+                <input type="text" class="name" placeholder=" Names..">Names
+                <input type="text" class="number" placeholder=" 07********">Number<br><br><br>
                 <input type="text" class="location" placeholder="Location..">Location
                 <input type="email" class="Email" placeholder="Name@gmail.com">Email Address
+                <br><br>
+                <button type="submit">Send</button>
             </form>
             <br><br><br>
         </div>
@@ -37,14 +39,14 @@
                     <img src="images/neopolitan.jpg" width="300px" height="200px" class="Neo" >
                     <h5>Neopolitan_Pizza</h5>
                     <div class="details 1">
-                    Size<select>
+                    Size<select class="size">
                         <option value=""></option>
                         <option value="small">Small-Ksh.500</option>
                         <option value="Medium">Medium-Ksh.800</option>
                         <option value="Large">Large-Ksh.1100</option>
                     </select>
                     <br><br>
-                    Toppings<select>
+                    Toppings<select class="toppings">
                         <option value=""></option>
                         <option value="pepparoni">Pepperoni and cheese-Ksh.300</option>
                         <option value="BBQ">Chicken and BBQ sauce-Ksh.300</option>
@@ -52,7 +54,7 @@
                         <option value="pineapple">Pineapple and black olives-Ksh.300</option>
                     </select>
                     <br><br>
-                    Crust<select>
+                    Crust<select class="crust">
                         <option value=""></option>
                         <option value="GlutenFree">Gluten_Free</option>
                         <option value="Thick">Thick</option>
@@ -63,9 +65,9 @@
                         <option value="deep">Deep</option>
                     </select>
                     <br><br>
-                    No.<input type="number">
+                    No.<input type="number" class="number">
                     <br><br>
-                    <button type="submit">Calculate</button>
+                    <button type="submit" class="calc"">Calculate</button>
                     <br><br>
                     </div>
                 </div>
@@ -73,7 +75,7 @@
                     <img src="images/Sicilian-pizza.jpg" width="300px" height="200px" class="sic">
                     <h5>Sicilian_Pizza</h5>
                     <div class="details 2">
-                        Size<select>
+                        Size<select class="size">
                             <option value=""></option>
                             <option value="small">Small-Ksh.500</option>
                             <option value="Medium">Medium-Ksh.800</option>
@@ -321,7 +323,7 @@
                 <h3>DELIVERY</h3>
                 <p>Would you like your pizza Home-delivered or<br> you would like to proceed to our restaurant 
                     to<br> pick your order</p>
-                    <select>
+                    <select class="delivery">
                         <option value=""></option>
                         <option value="home-delivered">Home-delivered-Ksh.300</option>
                         <option value="personal">Personal-delivery-Free</option>
@@ -330,8 +332,8 @@
                     <button type="submit" class="btn btn-secondary">Update</button>
                     <hr>
                     <h3>TOTAL</h3>
-                    <button class="btn btn-primary">Show Price</button>
-                    <p class="total"></p>
+                    <button class="btn btn-primary" onclick="usersdisplay()">Show Price</button>
+                    <p id="details"></p>
             </div>
             <hr>
         <div class="finish">
