@@ -19,43 +19,321 @@
             <a href="#menu"><button>Checkout our Menu</button></a>
             <br><br>
         </div>
+        <div class="location">
+            <h3>Contact_Details</h3>
+            <br><br><br>
+            <form>
+                <input type="text" class="name" placeholder="Name..">Name
+                <input type="text" class="name" placeholder="07********">Number<br><br><br>
+                <input type="text" class="location" placeholder="Location..">Location
+                <input type="email" class="Email" placeholder="Name@gmail.com">Email Address
+            </form>
+            <br><br><br>
+        </div>
         <div id="menu">
             <strong><h4><u>Menu</u></h4></strong>
             <div class="row">
                 <div class="col-md-3">
-                    <img src="images/neopolitan.jpg" width="300px" height="200px">
+                    <img src="images/neopolitan.jpg" width="300px" height="200px" class="Neo" >
                     <h5>Neopolitan_Pizza</h5>
+                    <div class="details 1">
+                    Size<select>
+                        <option value=""></option>
+                        <option value="small">Small-Ksh.500</option>
+                        <option value="Medium">Medium-Ksh.800</option>
+                        <option value="Large">Large-Ksh.1100</option>
+                    </select>
+                    <br><br>
+                    Toppings<select>
+                        <option value=""></option>
+                        <option value="pepparoni">Pepperoni and cheese-Ksh.300</option>
+                        <option value="BBQ">Chicken and BBQ sauce-Ksh.300</option>
+                        <option value="Bacon">Bacon and pineapple-Ksh.300</option>
+                        <option value="pineapple">Pineapple and black olives-Ksh.300</option>
+                    </select>
+                    <br><br>
+                    Crust<select>
+                        <option value=""></option>
+                        <option value="GlutenFree">Gluten_Free</option>
+                        <option value="Thick">Thick</option>
+                        <option value="Crispy">Crispy</option>
+                        <option value="stuffed">Stuffed</option>
+                        <option value="Newhaven">New_Haven</option>
+                        <option value="thin">Thin</option>
+                        <option value="deep">Deep</option>
+                    </select>
+                    <br><br>
+                    No.<input type="number">
+                    <br><br>
+                    <button type="submit">Calculate</button>
+                    <br><br>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="images/Sicilian-pizza.jpg" width="300px" height="200px">
+                    <img src="images/Sicilian-pizza.jpg" width="300px" height="200px" class="sic">
                     <h5>Sicilian_Pizza</h5>
+                    <div class="details 2">
+                        Size<select>
+                            <option value=""></option>
+                            <option value="small">Small-Ksh.500</option>
+                            <option value="Medium">Medium-Ksh.800</option>
+                            <option value="Large">Large-Ksh.1100</option>
+                        </select>
+                        <br><br>
+                        Toppings<select>
+                            <option value=""></option>
+                            <option value="pepparoni">Pepperoni and cheese-Ksh.300</option>
+                            <option value="BBQ">Chicken and BBQ sauce-Ksh.300</option>
+                            <option value="Bacon">Bacon and pineapple-Ksh.300</option>
+                            <option value="pineapple">Pineapple and black olives-Ksh.300</option>
+                        </select>
+                        <br><br>
+                        Crust<select>
+                            <option value=""></option>
+                            <option value="GlutenFree">Gluten_Free</option>
+                            <option value="Thick">Thick</option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="stuffed">Stuffed</option>
+                            <option value="Newhaven">New_Haven</option>
+                            <option value="thin">Thin</option>
+                            <option value="deep">Deep</option>
+                        </select>
+                        <br><br>
+                        No.<input type="number">
+                        <br><br>
+                        <button type="submit">Calculate</button>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="images/detroit-style-pizza-43-1500x1125.jpg" width="300px" height="200px">
+                    <img src="images/detroit-style-pizza-43-1500x1125.jpg" width="300px" height="200px" class="det">
                     <h5>Detroit_Pizza</h5>
+                     <div class="details 3">
+                        Size<select>
+                            <option value=""></option>
+                            <option value="small">Small-Ksh.500</option>
+                            <option value="Medium">Medium-Ksh.800</option>
+                            <option value="Large">Large-Ksh.1100</option>
+                        </select>
+                        <br><br>
+                        Toppings<select>
+                            <option value=""></option>
+                            <option value="pepparoni">Pepperoni and cheese-Ksh.300</option>
+                            <option value="BBQ">Chicken and BBQ sauce-Ksh.300</option>
+                            <option value="Bacon">Bacon and pineapple-Ksh.300</option>
+                            <option value="pineapple">Pineapple and black olives-Ksh.300</option>
+                        </select>
+                        <br><br>
+                        Crust<select>
+                            <option value=""></option>
+                            <option value="GlutenFree">Gluten_Free</option>
+                            <option value="Thick">Thick</option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="stuffed">Stuffed</option>
+                            <option value="Newhaven">New_Haven</option>
+                            <option value="thin">Thin</option>
+                            <option value="deep">Deep</option>
+                        </select>
+                        <br><br>
+                        No.<input type="number">
+                        <br><br>
+                        <button type="submit">Calculate</button>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="images/chicago-thin-crust-pizza.jpg" width="300px" height="200px">
+                    <img src="images/chicago-thin-crust-pizza.jpg" width="300px" height="200px" class="chic">
                     <h5>Chicago_Pizza</h5>
+                    <div class="details 4">
+                        Size<select>
+                            <option value=""></option>
+                            <option value="small">Small-Ksh.500</option>
+                            <option value="Medium">Medium-Ksh.800</option>
+                            <option value="Large">Large-Ksh.1100</option>
+                        </select>
+                        <br><br>
+                        Toppings<select>
+                            <option value=""></option>
+                            <option value="pepparoni">Pepperoni and cheese-Ksh.300</option>
+                            <option value="BBQ">Chicken and BBQ sauce-Ksh.300</option>
+                            <option value="Bacon">Bacon and pineapple-Ksh.300</option>
+                            <option value="pineapple">Pineapple and black olives-Ksh.300</option>
+                        </select>
+                        <br><br>
+                        Crust<select>
+                            <option value=""></option>
+                            <option value="GlutenFree">Gluten_Free</option>
+                            <option value="Thick">Thick</option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="stuffed">Stuffed</option>
+                            <option value="Newhaven">New_Haven</option>
+                            <option value="thin">Thin</option>
+                            <option value="deep">Deep</option>
+                        </select>
+                        <br><br>
+                        No.<input type="number">
+                        <br><br>
+                        <button type="submit">Calculate</button>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="images/Greek_pizza.jpg" width="300px" height="200px">
+                    <img src="images/Greek_pizza.jpg" width="300px" height="200px" class="greek">
                     <h5>Greek_Pizza</h5>
+                    <div class="details 5">
+                        Size<select>
+                            <option value=""></option>
+                            <option value="small">Small-Ksh.500</option>
+                            <option value="Medium">Medium-Ksh.800</option>
+                            <option value="Large">Large-Ksh.1100</option>
+                        </select>
+                        <br><br>
+                        Toppings<select>
+                            <option value=""></option>
+                            <option value="pepparoni">Pepperoni and cheese-Ksh.300</option>
+                            <option value="BBQ">Chicken and BBQ sauce-Ksh.300</option>
+                            <option value="Bacon">Bacon and pineapple-Ksh.300</option>
+                            <option value="pineapple">Pineapple and black olives-Ksh.300</option>
+                        </select>
+                        <br><br>
+                        Crust<select>
+                            <option value=""></option>
+                            <option value="GlutenFree">Gluten_Free</option>
+                            <option value="Thick">Thick</option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="stuffed">Stuffed</option>
+                            <option value="Newhaven">New_Haven</option>
+                            <option value="thin">Thin</option>
+                            <option value="deep">Deep</option>
+                        </select>
+                        <br><br>
+                        No.<input type="number">
+                        <br><br>
+                        <button type="submit">Calculate</button>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="images/st_louis.jpg" width="300px" height="200px">
+                    <img src="images/st_louis.jpg" width="300px" height="200px" class="louis">
                     <h5>St.Louis_Pizza</h5>
+                     <div class="details 6">
+                        Size<select>
+                            <option value=""></option>
+                            <option value="small">Small-Ksh.500</option>
+                            <option value="Medium">Medium-Ksh.800</option>
+                            <option value="Large">Large-Ksh.1100</option>
+                        </select>
+                        <br><br>
+                        Toppings<select>
+                            <option value=""></option>
+                            <option value="pepparoni">Pepperoni and cheese-Ksh.300</option>
+                            <option value="BBQ">Chicken and BBQ sauce-Ksh.300</option>
+                            <option value="Bacon">Bacon and pineapple-Ksh.300</option>
+                            <option value="pineapple">Pineapple and black olives-Ksh.300</option>
+                        </select>
+                        <br><br>
+                        Crust<select>
+                            <option value=""></option>
+                            <option value="GlutenFree">Gluten_Free</option>
+                            <option value="Thick">Thick</option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="stuffed">Stuffed</option>
+                            <option value="Newhaven">New_Haven</option>
+                            <option value="thin">Thin</option>
+                            <option value="deep">Deep</option>
+                        </select>
+                        <br><br>
+                        No.<input type="number">
+                        <br><br>
+                        <button type="submit">Calculate</button>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="images/newyork.jpg" width="300px" height="200px">
+                    <img src="images/newyork.jpg" width="300px" height="200px" class="Nyc">
                     <h5>New york_Pizza</h5>
+                    <div class="details 7">
+                        Size<select>
+                            <option value=""></option>
+                            <option value="small">Small-Ksh.500</option>
+                            <option value="Medium">Medium-Ksh.800</option>
+                            <option value="Large">Large-Ksh.1100</option>
+                        </select>
+                        <br><br>
+                        Toppings<select>
+                            <option value=""></option>
+                            <option value="pepparoni">Pepperoni and cheese-Ksh.300</option>
+                            <option value="BBQ">Chicken and BBQ sauce-Ksh.300</option>
+                            <option value="Bacon">Bacon and pineapple-Ksh.300</option>
+                            <option value="pineapple">Pineapple and black olives-Ksh.300</option>
+                        </select>
+                        <br><br>
+                        Crust<select>
+                            <option value=""></option>
+                            <option value="GlutenFree">Gluten_Free</option>
+                            <option value="Thick">Thick</option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="stuffed">Stuffed</option>
+                            <option value="Newhaven">New_Haven</option>
+                            <option value="thin">Thin</option>
+                            <option value="deep">Deep</option>
+                        </select>
+                        <br><br>
+                        No.<input type="number">
+                        <br><br>
+                        <button type="submit">Calculate</button>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="images/california.jpg" width="300px" height="200px">
+                    <img src="images/california.jpg" width="300px" height="200px" class="cali">
                     <h5>California_Pizza</h5>
+                    <div class="details 8">
+                        Size<select>
+                            <option value=""></option>
+                            <option value="small">Small-Ksh.500</option>
+                            <option value="Medium">Medium-Ksh.800</option>
+                            <option value="Large">Large-Ksh.1100</option>
+                        </select>
+                        <br><br>
+                        Toppings<select>
+                            <option value=""></option>
+                            <option value="pepparoni">Pepperoni and cheese-Ksh.300</option>
+                            <option value="BBQ">Chicken and BBQ sauce-Ksh.300</option>
+                            <option value="Bacon">Bacon and pineapple-Ksh.300</option>
+                            <option value="pineapple">Pineapple and black olives-Ksh.300</option>
+                        </select>
+                        <br><br>
+                        Crust<select>
+                            <option value=""></option>
+                            <option value="GlutenFree">Gluten_Free</option>
+                            <option value="Thick">Thick</option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="stuffed">Stuffed</option>
+                            <option value="Newhaven">New_Haven</option>
+                            <option value="thin">Thin</option>
+                            <option value="deep">Deep</option>
+                        </select>
+                        <br><br>
+                        No.<input type="number">
+                        <br><br>
+                        <button type="submit">Calculate</button>
+                    </div>
                 </div>
             </div>
-        </div>
+            </div>
+            <hr>
+            <div class="Balance">
+                <h3>DELIVERY</h3>
+                <p>Would you like your pizza Home-delivered or<br> you would like to proceed to our restaurant 
+                    to<br> pick your order</p>
+                    <select>
+                        <option value=""></option>
+                        <option value="home-delivered">Home-delivered-Ksh.300</option>
+                        <option value="personal">Personal-delivery-Free</option>
+                    </select>
+                    <br><br>
+                    <button type="submit" class="btn btn-secondary">Update</button>
+                    <hr>
+                    <h3>TOTAL</h3>
+                    <button class="btn btn-primary">Show Price</button>
+                    <p class="total"></p>
+            </div>
+            <hr>
         <div class="finish">
             <p>We are devoted to only be the best at serving you</p>
             <h4>Pizza_World<br>2019</h4>

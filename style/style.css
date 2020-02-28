@@ -50,3 +50,29 @@ body{
  border-radius: 30px;
  background-color: yellowgreen;
 }
+.location{
+    text-align: center;
+    background-color: rgb(83, 37, 28);
+}
+input[type=text]{
+    background-color: transparent;
+    width: 500px;
+    color: wheat;
+}
+.Email{
+    background-color: transparent;
+    width: 500px;
+    color: wheat;
+}
+.details{
+    display: none;
+}
+#menu button{
+    background-color: yellowgreen;
+    border-radius: 20px;
+    height: 70px;
+    width: 100px;
+}
+.Balance{
+    text-align: center;
+}
