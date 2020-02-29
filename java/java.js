@@ -23,67 +23,42 @@ $(".Nyc").click(function(){
 $(".cali").click(function(){
     $(".8").slideToggle();
 })
- //*Business logic*//
- function person (names,phone,location,Email){
-    this.names=names;
-    this.phone=phone;
-    this.location=location;
-    this.Email=Email;
+function order(size,toppings,number,delivery){
+    this.size = size;
+    this.toppings =toppings;
+    this.number = number;
+    this.delivery = delivery;
 }
-  function order (size,toppings,crust,number,delivery){
-     this.size=size;
-     this.toppings=toppings;
-     this.crust=crust;
-     this.number=number;
-     this.delivery=delivery;
- }
-//*User logic*//
-var names =$(".name").val();
-var phone=$(".phone").val();
-var location=$(".location").val();
-var email =$(".Email").val();
-var topping_price=300;
-var User = new person(names,phone,location,email);
-
-
-var size = $(".size").val();
-var toppings =$(".toppings").val();
-var crust = $(".crust").val();
-var number =$(".number").val();
-var delivery=$(".delivery").val();
-var Myorder = new order(size,toppings,crust,number,delivery);
-let price = 0;
-let Total =0;
-let Balance =0;
- 
-  $(".calc").click(function(){
-switch(size){
-    case size="Large":
-        price=1100;
-        alert(price)
+order.prototype.price = function(){
+    let price =0;
+    let Total =0;
+    if (this.size === "Large"){
+     price =1100;
+     Total = price + 300;
+      if(this.delivery ===  "Home-delivered"){ 
+          Total= Total + 300
+      } 
+      else 
+      Total = Total + 0
+    }
+    else if (this.size === "Medium"){
+        price = 800;
         Total = price + 300;
-        alert(Total)
-        Balance= Total * 7;
-          alert(Balance)
-        break
-     case  size="Medium":
-         price=800;
-         alert(price)
-    Total = price + 300;
-    alert(Total)
-    Balance= Total * 7;
-    alert(Balance)
-         break
-     case size="small":
-         price = 500;
-         alert(price)
-    Total = price + 300;
-    alert(Total)
-    Balance= Total * 7;
-    alert(Balance);
-    break
-    default:
-        alert("Make your order correctly")
+        if(this.delivery ===  "Home-delivered"){ 
+            Total= Total + 300
+        } 
+        else 
+        Total = Total + 0
+    }
+    else if(this.size ==="small"){
+        price=500
+        Total = price + 300;
+        if(this.delivery ===  "Home-delivered"){ 
+            Total= Total + 300
+        } 
+        else 
+        Total = Total + 0
+    }
+    else alert("Enter your sizes ")
 }
-  });
 })
