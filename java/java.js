@@ -72,5 +72,8 @@ order.prototype.price = function(){
      var delivery = $(".delivery").val();
       var myOrder = new order(size,toppings,number,delivery);
       myOrder.price()
+ });
+ $("#update").click(function(){
+     
  })
 })
