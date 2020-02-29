@@ -1,28 +1,4 @@
 $("document").ready(function(){
- $(".Neo").click(function(){
-     $(".1").slideToggle();
- })
- $(".sic").click(function(){
-    $(".2").slideToggle();
-})
-$(".det").click(function(){
-    $(".3").slideToggle();
-}) 
-$(".chic").click(function(){
-    $(".4").slideToggle();
-})
-$(".greek").click(function(){
-    $(".5").slideToggle();
-})
-$(".louis").click(function(){
-    $(".6").slideToggle();
-})
-$(".Nyc").click(function(){
-    $(".7").slideToggle();
-})
-$(".cali").click(function(){
-    $(".8").slideToggle();
-})
 function order(size,toppings,number,delivery){
     this.size = size;
     this.toppings =toppings;
@@ -48,25 +24,27 @@ order.prototype.price = function(){
         Total = Total * this.number;
     }
     else alert("Enter your sizes ")
-    $("#details").text("Your pizza will be ready shorty,The total price is "+Total)
     order.prototype.update = function(){
         if(this.delivery === "home-delivered"){
             Total = Total + 300 ;
         }
-        else if(this.delivery === "personal"){
+        else 
+        if(this.delivery === "personal"){
             Total = Total + 0 ;
         }
+        else
+        alert("Please choose your delivery")
     }
+    $("#details").text("Your pizza will be ready shorty,The total price is "+Total)
 }
- $("#price_show").click(function(){
-     var size= $("#size").val();
-     var toppings = $(".toppings").val();
-     var number = $(".number").val();
+
+ $("form#1").submit(function(){
+     event.preventDefault();
+     var size= $(".size").val();
+     var toppings = $("#toppings").val();
+     var number = $("#number").val();
      var delivery = $(".delivery").val();
       var myOrder = new order(size,toppings,number,delivery);
       myOrder.price()
  });
- $("#update").click(function(){
-    myOrder.update()
- })
 })

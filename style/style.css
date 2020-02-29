@@ -64,15 +64,6 @@ input[type=text]{
     width: 500px;
     color: wheat;
 }
-.details{
-    display: none;
-}
-#menu button{
-    background-color: yellowgreen;
-    border-radius: 20px;
-    height: 70px;
-    width: 100px;
-}
 .Balance{
     text-align: center;
 }
