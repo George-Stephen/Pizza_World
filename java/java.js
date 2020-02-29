@@ -1,4 +1,22 @@
 $("document").ready(function(){
+    function person (name,email,phone){
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+        person.prototype.profile = function(){
+         $("#name").text("Your name is "+this.name)
+         $("#email").text("Your Email address is "+this.email)
+         $("#phone").text("Your Phone number is "+this.phone)
+        }
+        $("#profile").click(function(){
+            var name = $(".name").val();
+            var email =$(".Email").val();
+            var phone = $(".phone").val();
+            var location = $(".location").val();
+             var user = new person(name,email,phone,location)
+            user.profile()
+        })
     function order(size,toppings,number,delivery,type){
         this.size = size;
         this.toppings =toppings;
@@ -25,9 +43,21 @@ $("document").ready(function(){
             Total = Total * this.number;
         }
         else alert("Enter your sizes ")
-        $("#details").text("Your pizza will be ready shorty,The total price is "+Total); 
+        var delivery=prompt("Would like it hand delivered or you would like to proceed to our restaurant ?")
+        if(delivery === "hand delivered"){
+            alert("You'll have to add ksh.300 to your full price ")
+            Total = Total + 300;
+             var location =prompt("Please enter your location")
+             $("#location").text("Your location is "+location)
+        }
+        else if(delivery === "personal"){
+            alert("We are expecting you soon");
+        }
+        else alert('Wrong choice');
+
+        $("#details").text("Your pizza will be ready shortly,The total price is "+Total);
+       
     }
-    
      $(".calc").click(function(){
          var type = $("#type").val()
          var size= $("#size").val();

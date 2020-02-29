@@ -25,15 +25,14 @@
             <form>
                 <input type="text" class="name" placeholder=" Names..">Names
                 <input type="text" class="phone" placeholder=" 07********">Number<br><br><br>
-                <input type="text" class="location" placeholder="Location..">Location
                 <input type="email" class="Email" placeholder="Name@gmail.com">Email Address
                 <br><br>
-                <button type="submit">Send</button>
+                <button type="submit" id="profile" class="btn btn-primary">Send</button>
             </form>
             <br><br><br>
         </div>
         <div id="menu">
-            <strong><h4><u>Menu(Pliz click on one type)</u></h4></strong>
+            <strong><h4><u>Menu</u></h4></strong>
             <div class="row">
                 <div class="col-md-3">
                     <img src="images/neopolitan.jpg" width="300px" height="200px" class="Neo" >
@@ -70,8 +69,7 @@
                 </div>
             </div>
             </div>
-            <hr>
-            <div class="details">
+            <div id="order">
              <form id="1">
                 Type<select id="type">
                     <option value=""></option>
@@ -114,26 +112,19 @@
             <br><br>
             No.<input type="number" class="number">
             <br>
-            <hr>
-            <h3>DELIVERY</h3>
-            <p>Would you like your pizza Home-delivered or<br> you would like to proceed to our restaurant 
-                to<br> pick your order</p>
-                <select class="delivery">
-                    <option value=""></option>
-                    <option value="home-delivered">Home-delivered-Ksh.300</option>
-                    <option value="personal">Personal-delivery-Free</option>
-                </select>
             <br><br>
             <button type="submit" class="calc"">Calculate</button>
             </form>
             </div>
-            <hr>
                     <div id="price">
-                    <h3>TOTAL</h3>
+                    <h3><u>TOTAL</u></h3>
+                    <p id="name"></p>
+                    <p id="email"></p>
+                    <p id="phone"></p>
+                    <p id="location"></p>
                     <p id="details"></p>
-                    <p id="update"></p>
+                    
                 </div>
-            <hr>
         <div class="finish">
             <p>We are devoted to only be the best at serving you</p>
             <h4>Pizza_World<br>2019</h4>

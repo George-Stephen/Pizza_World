@@ -67,9 +67,24 @@ input[type=text]{
 .Balance{
     text-align: center;
 }
-.details{
+#order{
     text-align: center;
+    background-image: url(../images/7u9Zg8.jpg);
+    padding: 90px 90px;
+    background-size: 1500px;
+    background-repeat:no-repeat;
+    background-position: center;
 }
 #price{
     text-align: center;
+    background-color: rgb(63, 8, 8);
+    padding: 20px 20px;
+    color: khaki;
 }
+#menu{
+    background-color: grey;
+}
+img{
+    border-radius: 80px;
+}
+
