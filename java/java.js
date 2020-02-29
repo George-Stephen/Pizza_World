@@ -35,6 +35,7 @@ order.prototype.price = function(){
     if (this.size === "Large"){
      price =1100;
      Total = price + 300;
+     Total = Total * this.number;
       if(this.delivery ===  "Home-delivered"){ 
           Total= Total + 300
       } 
@@ -44,6 +45,7 @@ order.prototype.price = function(){
     else if (this.size === "Medium"){
         price = 800;
         Total = price + 300;
+        Total =Total * this.number;
         if(this.delivery ===  "Home-delivered"){ 
             Total= Total + 300
         } 
@@ -53,6 +55,7 @@ order.prototype.price = function(){
     else if(this.size ==="small"){
         price=500
         Total = price + 300;
+        Total = Total * this.number;
         if(this.delivery ===  "Home-delivered"){ 
             Total= Total + 300
         } 
@@ -60,5 +63,14 @@ order.prototype.price = function(){
         Total = Total + 0
     }
     else alert("Enter your sizes ")
+    $("#details").text("Your pizza will be ready shorty,The total price is "+Total)
 }
+ $("#price_show").click(function(){
+     var size= $("#size").val();
+     var toppings = $(".toppings").val();
+     var number = $(".number").val();
+     var delivery = $(".delivery").val();
+      var myOrder = new order(size,toppings,number,delivery);
+      myOrder.price()
+ })
 })
