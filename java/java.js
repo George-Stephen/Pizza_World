@@ -50,7 +50,7 @@ $("document").ready(function(){
              var location =prompt("Please enter your location")
              $("#location").text("Your location is "+location)
         }
-        else if(delivery === "personal"){
+        else if(delivery === "proceed to restaurant"){
             alert("We are expecting you soon");
         }
         else alert('Wrong choice');
