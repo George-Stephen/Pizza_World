@@ -25,9 +25,7 @@ $("document").ready(function(){
             Total = Total * this.number;
         }
         else alert("Enter your sizes ")
-        $("#details").text("Your pizza will be ready shorty,The total price is "+Total);
-
-        
+        $("#details").text("Your pizza will be ready shorty,The total price is "+Total); 
     }
     
      $(".calc").click(function(){
