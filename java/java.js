@@ -38,11 +38,11 @@ order.prototype.price = function(){
     $("#details").text("Your pizza will be ready shorty,The total price is "+Total)
 }
 
- $("form#1").submit(function(){
+ $(".calc").click(function(){
      event.preventDefault();
-     var size= $(".size").val();
-     var toppings = $("#toppings").val();
-     var number = $("#number").val();
+     var size= $("#size").val();
+     var toppings = $(".toppings").val();
+     var number = $(".number").val();
      var delivery = $(".delivery").val();
       var myOrder = new order(size,toppings,number,delivery);
       myOrder.price()
