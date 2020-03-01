@@ -55,7 +55,7 @@ $("document").ready(function(){
         }
         else alert('Wrong choice');
 
-        $("#details").text("Your pizza will be ready shortly,The total price is "+Total +"Your order is  " +this.type +"And your size is  "+this.size);
+        $("#details").text("Your pizza will be ready shortly,The total price is  "+Total +" Your order is  " +this.type +" And your  pizza size is  "+this.size);
        
     }
      $(".calc").click(function(){
