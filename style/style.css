@@ -74,6 +74,7 @@ input[type=text]{
     background-size: 1500px;
     background-repeat:no-repeat;
     background-position: center;
+    color:red;
 }
 #price{
     text-align: center;
