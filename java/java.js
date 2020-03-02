@@ -43,14 +43,14 @@ $("document").ready(function(){
             Total = Total * this.number;
         }
         else alert("Enter your sizes ")
-        var delivery=prompt("Would like it hand delivered or you would like to proceed to our restaurant ?")
-        if(delivery === "hand delivered"){
+        var delivery=prompt("Would like your order delivered.please enter  sure or not needed ?")
+        if(delivery === "sure"){
             alert("You'll have to add ksh.300 to your full price ")
             Total = Total + 300;
              var location =prompt("Please enter your location")
              $("#location").text("Your location is "+location)
         }
-        else if(delivery === "proceed to restaurant"){
+        else if(delivery === "not needed"){
             alert("We are expecting you soon");
         }
         else alert('Wrong choice');
