@@ -29,17 +29,17 @@ $("document").ready(function(){
         let Total =0;
         if (this.size === "Large"){
          price =1100;
-         Total = price + 300;
+         Total = price + 600;
          Total = Total * this.number;
         }
         else if (this.size === "Medium"){
             price = 800;
-            Total = price + 300;
+            Total = price + 600;
             Total =Total * this.number;
         }
         else if(this.size ==="small"){
             price=500
-            Total = price + 300;
+            Total = price + 600;
             Total = Total * this.number;
         }
         else alert("Enter your sizes ")
